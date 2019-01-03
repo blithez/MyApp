@@ -2,6 +2,8 @@ language: android
 before_install:
     - yes | sdkmanager "platforms;android-28"
     - chmod +x ./gradlew
+script:
+    ./gradle build
 android:
   components:
     # Uncomment the lines below if you want to
@@ -24,3 +26,11 @@ android:
     # if you need to run emulator(s) during your tests
     #- sys-img-x86-android-26
     #- sys-img-armeabi-v7a-android-17
+deploy:              
+  provider: releases 
+  api_key:           
+    secure: $GH_TOKEN
+  file: "main"       
+  skip_cleanup: true 
+  on:                
+     branch: master   
