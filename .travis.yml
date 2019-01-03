@@ -3,7 +3,7 @@ before_install:
     - yes | sdkmanager "platforms;android-28"
     - chmod +x ./gradlew
 script:
-    ./gradle build
+    ./gradlew build
 android:
   components:
     # Uncomment the lines below if you want to
