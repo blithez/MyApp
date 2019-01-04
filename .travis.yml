@@ -30,7 +30,7 @@ deploy:
   provider: releases 
   api_key:           
     secure: $GH_TOKEN
-  file: app/build/outputs/apk/app-release.apk
+  file: app/release/app-release.apk
   skip_cleanup: true 
   on:                
      branch: master   
