@@ -1,10 +1,16 @@
 language: android
+cache:
+    directories:
+        - $HOME/android-sdk-dl
+        - $HOME/android-sdk
+        - $HOME/.gradle/wrapper/
+        - $HOME/.gradle/caches/
 before_install:
     - yes | sdkmanager "platforms;android-28"
     - chmod +x ./gradlew
 script:
     - ./gradlew assembleRelease
-    - ls 
+    - ls $HOME
 android:
   components:
     # Uncomment the lines below if you want to
