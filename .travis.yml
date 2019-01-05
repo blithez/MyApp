@@ -1,5 +1,6 @@
 language: android
 cache:
+    apt: true
     directories:
         - $HOME/android-sdk-dl
         - $HOME/android-sdk
@@ -14,8 +15,8 @@ android:
   components:
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
-    - tools
-    - platform-tools
+    - tools-28.0.1
+    - platform-tools-28.0.1
 
     # The BuildTools version used by your project
     - build-tools-28.0.1
