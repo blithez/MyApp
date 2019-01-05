@@ -7,7 +7,7 @@ cache:
         - $HOME/.gradle/wrapper/
         - $HOME/.gradle/caches/
 before_install:
-    #- yes | sdkmanager "platforms;android-28"
+    - yes | sdkmanager "platforms;android-28"
     - chmod +x ./gradlew
 script:
     - ./gradlew assembleRelease
