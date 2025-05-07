@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="openbtstr">OPEN</string>
-    <string name="seekbatvalue">value</string>
-    <string name="configbtstr">CONFIG</string>
-    <string name="close">CLOSE</string>
-    <string name="start">Start</string>
-    <string name="degree">Degree</string>
-    <string name="pa">Pa</string>
-    <string name="meter">M</string>
 </resources>
